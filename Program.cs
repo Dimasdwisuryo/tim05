@@ -6,9 +6,44 @@
 // #3. Dimas Dwi Suryo Aji (102062400139) //
 // #4. Gita Naisya Wardani (102062400034)//
 
-
 using System;
 using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        if (Login())
+        {
+            Console.WriteLine("Selamat datang di sistem kasir bioskop!");
+        }
+        else
+        {
+            Console.WriteLine("Login gagal. Silakan coba lagi.");
+        }
+    }
+
+    // ** Login **
+    static bool Login()
+    {
+        Console.WriteLine("\n=== Login Kasir Bioskop ===");
+        Console.Write("Masukkan username: ");
+        string? username = Console.ReadLine();
+        Console.Write("Masukkan password: ");
+        string? password = Console.ReadLine();
+
+        if (username == "dimas" && password == "dimasarya")
+        {
+            Console.WriteLine("Login berhasil!\n");
+            return true; // Login berhasil
+        }
+        else
+        {
+            Console.WriteLine("Username atau password salah.\n");
+            return false; // Login gagal
+        }
+    }
+}
 
 namespace BioskopManagement
 {
