@@ -33,7 +33,7 @@ namespace BioskopManagement
 
                 while (true)
                 {
-                    Console.WriteLine("\n=== Aplikasi Manajemen Bioskop ===");
+                    Console.WriteLine("=== Aplikasi Manajemen Bioskop ===");
                     Console.WriteLine("1. Tambah Film");
                     Console.WriteLine("2. Tampilkan Semua Film");
                     Console.WriteLine("3. Update Film");
@@ -83,7 +83,7 @@ namespace BioskopManagement
         // Login
         static bool Login()
         {
-            Console.WriteLine("\n=== Login Kasir Bioskop ===");
+            Console.WriteLine("=== Login Kasir Bioskop ===");
             Console.Write("Masukkan username: ");
             string? username = Console.ReadLine();
             Console.Write("Masukkan password: ");
