@@ -27,7 +27,7 @@ namespace BioskopManagement
 
         static void Main(string[] args)
         {
-            if (Login())
+            if (Login_0405())
             {
                 Console.WriteLine("Selamat datang di kasir bioskop");
 
@@ -40,7 +40,11 @@ namespace BioskopManagement
                 Console.WriteLine("4. Hapus Film");
                 Console.WriteLine("5. Cari Film");
                 Console.WriteLine("6. Filter Film Berdasarkan Durasi");
-                Console.WriteLine("7. Keluar");
+                Console.WriteLine("7. Kategori Ticket");
+                Console.WriteLine("8. Jam Tayang + Kursi");
+                Console.WriteLine("9. Payment + Diskon");
+                Console.WriteLine("10. Invoice");
+                Console.WriteLine("11. Keluar");
                 Console.Write("Pilih menu: ");
                 
                 string? pilihan = Console.ReadLine();
@@ -48,22 +52,22 @@ namespace BioskopManagement
                 switch (pilihan)
                 {
                     case "1":
-                        TambahFilm();
+                        TambahFilm_0405();
                         break;
                     case "2":
-                        LihatFilm();
+                        LihatFilm_0405();
                         break;
                     case "3":
-                        UpdateFilm();
+                        UpdateFilm_0405();
                         break;
                     case "4":
-                        HapusFilm();
+                        HapusFilm_0405();
                         break;
                     case "5":
-                        CariFilm();
+                        CariFilm_0405();
                         break;
                     case "6":
-                        FilterFilm();
+                        FilterFilm_0405();
                         break;
                     case "7":
                         Console.WriteLine("Terima kasih telah menggunakan aplikasi ini!");
@@ -80,7 +84,8 @@ namespace BioskopManagement
         }
     }
 
-    static bool Login()
+    // halaman login
+    static bool Login_0405()
     {
         Console.WriteLine("=== Login Kasir Bioskop ===");
         Console.Write("Masukkan username: ");
@@ -100,7 +105,8 @@ namespace BioskopManagement
         }
     }
 
-        static void TambahFilm()
+    // Tambah Film
+        static void TambahFilm_0405()
         {
             Console.Write("Masukkan Judul Film: ");
             string? judul = Console.ReadLine();
@@ -131,7 +137,8 @@ namespace BioskopManagement
             }
         }
 
-        static void LihatFilm()
+        // Lihat Daftar Film
+        static void LihatFilm_0405()
         {
             Console.WriteLine("=== Daftar Film ===");
             if (daftarFilm.Count == 0)
@@ -146,8 +153,8 @@ namespace BioskopManagement
             }
         }
         
-
-        static void UpdateFilm()
+        // Update Film
+        static void UpdateFilm_0405()
         {
             Console.Write("Masukkan ID Film yang ingin diubah: ");
             if (int.TryParse(Console.ReadLine(), out int id))
@@ -186,7 +193,8 @@ namespace BioskopManagement
             }
         }
 
-        static void HapusFilm()
+        // Hapus Film
+        static void HapusFilm_0405()
         {
             Console.Write("Masukkan ID Film yang ingin dihapus: ");
             if (int.TryParse(Console.ReadLine(), out int id))
@@ -208,7 +216,8 @@ namespace BioskopManagement
             }
         }
 
-        static void CariFilm()
+        // Cari Film
+        static void CariFilm_0405()
         {
             Console.Write("Masukkan Judul Film yang ingin dicari: ");
             string? judul = Console.ReadLine();
@@ -224,7 +233,8 @@ namespace BioskopManagement
             }
         }
 
-        static void FilterFilm()
+        // Filter Film
+        static void FilterFilm_0405()
         {
             Console.Write("Masukkan Durasi Film yang ingin difilter: ");
     }
