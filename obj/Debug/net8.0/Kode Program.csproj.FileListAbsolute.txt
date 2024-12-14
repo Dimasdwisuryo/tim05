@@ -12,3 +12,4 @@ D:\tubesalpro\UAS_IS-07-04_Kelompok 5\Kode Program\obj\Debug\net8.0\refint\Kode 
 D:\tubesalpro\UAS_IS-07-04_Kelompok 5\Kode Program\obj\Debug\net8.0\Kode Program.pdb
 D:\tubesalpro\UAS_IS-07-04_Kelompok 5\Kode Program\obj\Debug\net8.0\Kode Program.genruntimeconfig.cache
 D:\tubesalpro\UAS_IS-07-04_Kelompok 5\Kode Program\obj\Debug\net8.0\ref\Kode Program.dll
+D:\tubesalpro\UAS_IS-07-04_Kelompok 5\Kode Program\obj\Debug\net8.0\Kode Program.sourcelink.json
